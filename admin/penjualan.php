@@ -6,7 +6,7 @@ include '../koneksi.php';
 <div class="container mt-4">
 
     <h3 class="mb-4 judul">
-        🛒 Penjualan
+        🛒 Transaksi Penjualan
     </h3>
 
 
@@ -145,7 +145,7 @@ if(isset($_SESSION['cart']) && count($_SESSION['cart']) > 0){
         <!-- CHECKOUT -->
         <?php if(isset($_SESSION['cart']) && count($_SESSION['cart']) > 0){ ?>
         <div class="panel-footer text-right" style="background:#fff;">
-            <form action="simpan_penjualan.php" method="post">
+            <form method="post" action="simpan_penjualan.php">
                 <button type="submit" class="btn btn-coklat btn-lg">
                     ✅ Simpan Transaksi
                 </button>
