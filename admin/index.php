@@ -60,14 +60,14 @@
         <div class="col-md-3">
             <div class="panel panel-success">
                 <div class="panel-heading">
-                    <h1><i class="glyphicon glyphicon-ok-circle"></i><span class="pull-right">
+                    <h1><i class="glyphicon glyphicon-usd"></i><span class="pull-right">
                         <?php
                        $omset = mysqli_query($koneksi,"SELECT SUM(total_harga) AS total FROM penjualan");
                         $data = mysqli_fetch_assoc($omset);
                         echo "Rp ".number_format($data['total'],0,',','.');
                         ?>
                     </span></h1>
-                    Total Pendapatan
+                    Total Ppenjualan
                 </div>
             </div>
         </div>
